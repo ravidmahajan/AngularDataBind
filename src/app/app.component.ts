@@ -27,4 +27,12 @@ export class AppComponent {
       });
     }
 
+    onChange(){
+    this.serverElements[0].name="changed";
+    }
+
+    OnDestroycalled(){
+      this.serverElements.splice(0,1);
+    }
+
 }
